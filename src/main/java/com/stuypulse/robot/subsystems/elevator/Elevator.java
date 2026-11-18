@@ -72,6 +72,7 @@ public class Elevator extends PeriodicSubsystem implements SimulatedMechanism {
      *
      * @return Command to orchestrate the target state
      */
+
     /**
      * Command the elevator to the {@link ElevatorState#SCALE} state
      *
