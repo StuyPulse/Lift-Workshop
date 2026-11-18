@@ -60,24 +60,36 @@ public class Elevator extends PeriodicSubsystem implements SimulatedMechanism {
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandIdleState() {
+        return this.commandState(ElevatorState.IDLE);
+    }
 
     /**
      * Command the elevator to the {@link ElevatorState#DOWN} state
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandDownState() {
+        return this.commandState(ElevatorState.DOWN);
+    }
 
     /**
      * Command the elevator to the {@link ElevatorState#SWITCH} state
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandSwitchState() {
+        return this.commandState(ElevatorState.SWITCH);
+    }
 
     /**
      * Command the elevator to the {@link ElevatorState#SCALE} state
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandScaleState() {
+        return this.commandState(ElevatorState.SCALE);
+    }
 
     // EXPOSED INPUTS
 

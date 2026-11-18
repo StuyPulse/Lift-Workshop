@@ -58,18 +58,27 @@ public class BuddyClimb extends PeriodicSubsystem { // not simulated
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandStopState() {
+        return this.commandState(BuddyClimbState.STOP);
+    }
 
     /**
      * Command the buddy climb to the {@link BuddyClimbState#RETRACT} state
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandRetractState() {
+        return this.commandState(BuddyClimbState.RETRACT);
+    }
 
     /**
      * Command the buddy climb to the {@link BuddyClimbState#DEPLOY} state
      *
      * @return Command to orchestrate the target state
      */
+    public Command commandDeployState() {
+        return this.commandState(BuddyClimbState.DEPLOY);
+    }
 
     // OUTPUT CONTROL
     private void runStop() {
