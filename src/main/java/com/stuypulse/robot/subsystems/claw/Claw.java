@@ -92,63 +92,42 @@ public class Claw extends PeriodicSubsystem implements SimulatedMechanism {
      *
      * @return Command to orchestrate the target state
      */
-    public Command commandPivotIdleState() {
-        return this.commandPivotState(PivotState.IDLE);
-    }
 
     /**
      * Command the pivot to the {@link PivotState#INTAKE} state
      *
      * @return Command to orchestrate the target state
      */
-    public Command commandPivotIntakeState() {
-        return this.commandPivotState(PivotState.INTAKE);
-    }
 
     /**
      * Command the pivot to the {@link PivotState#HELD} state
      *
      * @return Command to orchestrate the target state
      */
-    public Command commandPivotHeldState() {
-        return this.commandPivotState(PivotState.HELD);
-    }
 
     /**
      * Command the pivot to the {@link PivotState#OUTTAKE} state
      *
      * @return Command to orchestrate the target state
      */
-    public Command commandPivotOuttakeState() {
-        return this.commandPivotState(PivotState.OUTTAKE);
-    }
 
     /**
      * Command the rollers to the {@link RollerState#IDLE} state
      *
      * @return Command to orchestrate the target state
      */
-    public Command comandRollerIdleState() {
-        return this.commandRollerState(RollerState.IDLE);
-    }
 
     /**
      * Command the rollers to the {@link RollerState#INTAKE} state
      *
      * @return Command to orchestrate the target state
      */
-    public Command commandRollerIntakeState() {
-        return this.commandRollerState(RollerState.INTAKE);
-    }
 
     /**
      * Command the rollers to the {@link RollerState#OUTTAKE} state
      *
      * @return Command to orchestrate the target state
      */
-    public Command commandRollerOuttakeState() {
-        return this.commandRollerState(RollerState.OUTTAKE);
-    }
 
     // EXPOSED INPUTS
 
